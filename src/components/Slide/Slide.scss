@@ -1,0 +1,59 @@
+.slide {
+  display: flex;
+  justify-content: center;
+  padding: 140px 0px;
+
+  .container {
+    padding: 0 54px;
+    width: 1400px;
+
+    .slide-content {
+      position: relative;
+    }
+    h2 {
+      color: #404145;
+      font-size: 32px;
+      font-weight: 700;
+      padding-bottom: 24px;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+      background-color: white;
+      border-radius: 9999px;
+      bottom: 0;
+      box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+      -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+      height: 48px;
+      margin: auto;
+      margin-left: -25px;
+      position: absolute;
+      top: 0;
+      width: 48px;
+    }
+    .carousel-prev:before {
+      background: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/arrows.a8b0bad.svg) no-repeat;
+      background-size: 16px 64px;
+      content: "";
+      display: inline-block;
+      height: 16px;
+      margin-top: 3px;
+      width: 16px;
+    }
+    .carousel-next:before {
+      background: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/arrows.a8b0bad.svg) no-repeat;
+      background-position: 0 -48px;
+      background-size: 16px 64px;
+      content: "";
+      display: inline-block;
+      height: 16px;
+      margin-top: 3px;
+      width: 16px;
+    }
+
+    .carousel-initialized {
+      overflow: hidden;
+      position: unset;
+    }
+  }
+}

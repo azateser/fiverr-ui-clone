@@ -1,0 +1,10 @@
+@font-face {
+  font-family: DomaineDisplay;
+  font-weight: bold;
+  src: url("./domaine-display-web-bold.woff2");
+}
+@font-face {
+  font-family: DomaineDisplay;
+  font-style: italic;
+  src: url("./domaine-display-web-medium-italic.woff2");
+}

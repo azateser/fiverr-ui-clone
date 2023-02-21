@@ -1,0 +1,106 @@
+.business {
+  background: #0d084d;
+  margin-bottom: 96px;
+  margin-top: 96px;
+  .container {
+    display: flex;
+    margin: auto;
+    padding: 0 52px;
+    padding-bottom: 96px;
+    padding-top: 96px;
+    width: 1400px;
+
+    .details {
+      color: white;
+      flex-basis: 46.66667%;
+      max-width: 46.66667%;
+      .header {
+        align-items: center;
+        display: flex;
+        gap: 12px;
+        justify-content: start;
+        padding-bottom: 40px;
+        svg {
+          height: 22px;
+          width: 178px;
+        }
+        span {
+          background: #584aff;
+          border: 1px solid #584aff;
+          border-radius: 9999px;
+          font-size: 10px;
+          font-weight: 600;
+          justify-content: center;
+          line-height: 100%;
+          padding: 3px 7px 2px;
+          text-align: center;
+        }
+      }
+      .content {
+        padding-right: 5%;
+        h2 {
+          font-size: 32px;
+          line-height: 120%;
+          max-width: 450px;
+          padding-bottom: 24px;
+          i {
+            font-family: DomaineDisplay, Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-weight: 500;
+          }
+        }
+        p {
+          font-size: 18px;
+          line-height: 26px;
+          max-width: 450px;
+          padding-bottom: 32px;
+        }
+        ul {
+          margin-bottom: 48px;
+          max-width: 500px;
+          li {
+            align-items: start;
+            color: white;
+            display: flex;
+            padding-bottom: 12px;
+            svg {
+              fill: rgb(122, 125, 133);
+              margin-right: 10px;
+              min-width: 24px;
+            }
+            span {
+              font-size: 16px;
+              font-weight: 200;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+      .footer {
+        button {
+          background: #1dbf73;
+          border: none;
+          border-radius: 4px;
+          color: white;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 100%;
+          padding: 13px 25px;
+          transition: all 350ms ease;
+
+          &:hover {
+            background: #19a463;
+          }
+        }
+      }
+    }
+    .image {
+      flex-basis: 53.33333%;
+      margin-left: -20px;
+      max-width: 51%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

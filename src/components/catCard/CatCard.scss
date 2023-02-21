@@ -1,0 +1,38 @@
+.catCard {
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  height: 345px;
+  position: relative;
+  width: 236px;
+
+  img {
+    border-radius: 4px;
+    height: 100%;
+    object-fit: cover;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+
+  .description {
+    font-size: 14px;
+    font-weight: 300;
+    left: 15px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    left: 15px;
+    position: absolute;
+    top: 42px;
+  }
+}
