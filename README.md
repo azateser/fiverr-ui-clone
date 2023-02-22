@@ -26,9 +26,11 @@ This is a Fiverr UI Clone with React. This project is a part of my React learnin
 <details>
   <summary>HomePage</summary>
   
-  ![Fiverr UI Clone Homepage](./readmeAssets/homepage1.png)
+![Fiverr UI Clone Homepage](./readmeAssets/homepage1.png)
 
 ![Fiverr UI Clone Homepage2](./readmeAssets/homepage2.png)
+
+![Fiverr UI Clone Homepage3](./readmeAssets/homepage3.png)
 
 </details>
 
