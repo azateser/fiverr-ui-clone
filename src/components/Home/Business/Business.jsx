@@ -54,7 +54,7 @@ const Business = () => {
               </li>
             </ul>
           </div>
-          <div className="footer">
+          <div className="button-area">
             <button>Explore Fiverr Business</button>
           </div>
         </div>

@@ -1,11 +1,9 @@
 .business {
   background: #0d084d;
-  margin-bottom: 96px;
   margin-top: 96px;
   .container {
     display: flex;
     margin: auto;
-    padding: 0 52px;
     padding-bottom: 96px;
     padding-top: 96px;
     width: 1400px;
@@ -13,6 +11,7 @@
     .details {
       color: white;
       flex-basis: 46.66667%;
+      margin-left: 52px;
       max-width: 46.66667%;
       .header {
         align-items: center;
@@ -75,7 +74,7 @@
           }
         }
       }
-      .footer {
+      .button-area {
         button {
           background: #1dbf73;
           border: none;

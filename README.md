@@ -80,8 +80,8 @@ npm run dev
 - [x] Home: Fingertips Component
 - [x] Home: Marketplace Component
 - [x] Home: Business Component
-- [ ] Home: Product Slider Component
-- [ ] Footer Component
+- [x] Home: Product Slider Component
+- [x] Footer Component
 - [ ] Category Page
 - [ ] Single Product Page
 - [ ] List Page
