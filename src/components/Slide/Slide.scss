@@ -10,11 +10,27 @@
     .slide-content {
       position: relative;
     }
-    h2 {
-      color: #404145;
-      font-size: 32px;
-      font-weight: 700;
-      padding-bottom: 24px;
+    .title {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        color: #404145;
+        font-size: 32px;
+        font-weight: 700;
+        padding-bottom: 24px;
+      }
+      span {
+        align-items: center;
+        color: #446ee7;
+        display: flex;
+        fill: #446ee7;
+        font-weight: 200;
+        padding-bottom: 24px;
+        svg {
+          padding-left: 10px;
+        }
+      }
     }
 
     .carousel-prev,
@@ -56,4 +72,8 @@
       position: unset;
     }
   }
+}
+
+.projects {
+  background-color: #f5f5f5;
 }

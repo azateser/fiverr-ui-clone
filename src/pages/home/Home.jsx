@@ -1,21 +1,22 @@
 import React from "react";
-import Featured from "../../components/featured/Featured";
+import Featured from "../../components/Home/featured/Featured";
 import Slide from "../../components/slide/Slide";
-import TrustedBy from "../../components/trustedBy/TrustedBy";
+import TrustedBy from "../../components/Home/trustedBy/TrustedBy";
 import "./Home.scss";
 
-import { cards } from "../../data";
-import CatCard from "../../components/catCard/CatCard";
+import { cards, projects } from "../../data";
+import CatCard from "../../components/Home/catCard/CatCard";
 import Fingertips from "../../components/Home/Fingertips/Fingertips";
 import Marketplace from "../../components/Home/Marketplace/Marketplace";
 import Business from "../../components/Home/Business/Business";
+import ProjectCard from "../../components/Home/projectCard/ProjectCard";
 
 const Home = () => {
   return (
     <div>
       <Featured />
       <TrustedBy />
-      <Slide slidesToShow={5} arrowsScroll={4}>
+      <Slide title="Popular professional services" slidesToShow={5} arrowsScroll={4}>
         {cards.map((card) => (
           <CatCard item={card} key={card.id} />
         ))}
@@ -23,6 +24,11 @@ const Home = () => {
       <Fingertips />
       <Marketplace />
       <Business />
+      <Slide projects title="Get inspired with projects made by our freelancers" slidesToShow={4} arrowsScroll={3}>
+        {projects.map((project) => (
+          <ProjectCard item={project} key={project.id} />
+        ))}
+      </Slide>
     </div>
   );
 };

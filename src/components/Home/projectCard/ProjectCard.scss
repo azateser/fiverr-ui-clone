@@ -1,0 +1,50 @@
+.projectCard {
+  border-radius: 5px;
+  box-shadow: 0 0.14px 2.29266px rgb(0 0 0 / 3%), 0 0.37px 4.42626px rgb(0 0 0 / 5%), 0 3px 7px rgb(0 0 0 / 9%);
+  cursor: pointer;
+  height: 300px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 300px;
+
+  img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 70%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+
+  .info {
+    display: flex;
+    padding: 16px 0 12px 16px;
+    img {
+      border-radius: 9999px;
+      height: 40px;
+      object-fit: cover;
+      width: 40px;
+    }
+    .texts {
+      padding-left: 12px;
+      h2 {
+        color: #404145;
+        font-size: 14px;
+        line-height: 21px;
+        padding-bottom: 0px;
+        text-decoration: none;
+      }
+      span {
+        color: #95979d;
+        font-size: 14px;
+        line-height: 21px;
+        text-decoration: none;
+      }
+    }
+  }
+}
