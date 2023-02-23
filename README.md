@@ -23,16 +23,11 @@ This is a Fiverr UI Clone with React. This project is a part of my React learnin
 
 ![Fiverr UI Clone Main](./readmeAssets/main.png)
 
-<details>
-  <summary>HomePage</summary>
-  
 ![Fiverr UI Clone Homepage](./readmeAssets/homepage1.png)
 
 ![Fiverr UI Clone Homepage2](./readmeAssets/homepage2.png)
 
 ![Fiverr UI Clone Homepage3](./readmeAssets/homepage3.png)
-
-</details>
 
 ---
 
@@ -84,11 +79,6 @@ npm run dev
 - [x] Home: Business Component
 - [x] Home: Product Slider Component
 - [x] Footer Component
-- [ ] Category Page
-- [ ] Single Product Page
-- [ ] List Page
-- [ ] Chat Page
-- [ ] Add New Product Page
 - [ ] Login Modal
 - [ ] Join Modal
 - [ ] 404 Page
