@@ -40,7 +40,7 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} basename="/index.html" />;
+  return <RouterProvider router={router} />;
 }
 
 export default App;

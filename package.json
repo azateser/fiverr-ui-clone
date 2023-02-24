@@ -1,6 +1,6 @@
 {
   "name": "fiverr-frontend-clone",
-  "homepage": ".",
+  "homepage": "./",
   "private": true,
   "version": "0.0.0",
   "type": "module",
