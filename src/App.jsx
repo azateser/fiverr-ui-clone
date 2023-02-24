@@ -21,7 +21,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/fiverr-ui-clone/",
       element: <Layout />,
       children: [
         {
