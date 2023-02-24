@@ -4,7 +4,6 @@ import "./Footer.scss";
 import { footer } from "../../data";
 
 const Footer = () => {
-  console.log(footer.categories);
   return (
     <div className="footer">
       <div className="container">

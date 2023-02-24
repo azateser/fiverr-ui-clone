@@ -1,0 +1,209 @@
+.modals {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+
+  .container {
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    bottom: auto;
+    color: #404145;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: auto;
+    max-height: 90vh;
+    max-width: 600px;
+    padding: 0 36px 24px;
+    padding-bottom: 14px;
+    position: relative;
+    position: relative;
+    right: auto;
+    text-align: center;
+    top: auto;
+    width: 328px;
+
+    .closeModal {
+      align-items: center;
+      background-color: white;
+      border-radius: 9999px;
+      box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 20%);
+      color: #404145;
+      cursor: pointer;
+      display: flex;
+      font-size: 14px;
+      height: 30px;
+      justify-content: center;
+      line-height: 0;
+      position: absolute;
+      right: -12px;
+      top: -12px;
+      transition: all 350ms ease;
+      user-select: none;
+      width: 30px;
+      &:hover {
+        scale: 1.1;
+      }
+    }
+    .modal-header {
+      padding-top: 32px;
+      width: 100%;
+      h4 {
+        font-size: 24px;
+        line-height: 130%;
+        padding-bottom: 32px;
+      }
+      .socials {
+        button {
+          align-items: center;
+          background: #fff;
+          border: 1px solid #e4e5e7;
+          border-radius: 4px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          margin: 12px 0;
+          padding: 12px 30px 12px 16px;
+          width: 100%;
+          &:hover {
+            background: #fafafa;
+          }
+          p {
+            color: #62646a;
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+          }
+        }
+        button.facebook {
+          background: #4267b2;
+          border: 1px solid #4267b2;
+          &:hover {
+            opacity: 0.9;
+          }
+          p {
+            color: white !important;
+          }
+          svg {
+            fill: white;
+          }
+        }
+      }
+    }
+
+    .separator {
+      border-bottom: 1px solid #e4e5e7;
+      height: 12px;
+      margin: 20px 0 32px;
+      text-align: center;
+      width: 100%;
+      span {
+        background-color: #fff;
+        color: #62646a;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        padding: 0 8px;
+        text-transform: uppercase;
+      }
+    }
+    .modal-content {
+      width: 100%;
+      input {
+        border: 1px solid #c5c6c9;
+        border-radius: 4px;
+        box-shadow: none;
+        box-sizing: border-box;
+        color: #404145;
+        font: inherit;
+        font-weight: 200;
+        margin-bottom: 16px;
+        padding: 12px;
+        transition: 0.15s ease-in-out;
+        width: 100%;
+        &:focus {
+          border-color: #95979d;
+          box-shadow: none;
+          outline: none;
+        }
+        &::placeholder {
+          color: #9a9ca3;
+        }
+      }
+      button {
+        align-items: center;
+        background: #1dbf73;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        font-size: 16px;
+        font-weight: 400;
+        justify-content: center;
+        line-height: 100%;
+        padding: 12px 24px;
+        position: relative;
+        text-align: center;
+        transition: 70ms cubic-bezier(0.75, 0, 0.25, 1);
+        width: 100%;
+        &:hover {
+          background: #19a463;
+        }
+      }
+      span {
+        color: #62646a;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 21px;
+        padding-top: 20px;
+        text-align: center;
+      }
+      .forgot-password {
+        color: #1dbf73;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .modal-footer {
+      align-items: center;
+      background-color: #fff;
+      border-radius: 0 0 4px 4px;
+      border-top: 1px solid #dadbdd;
+      display: flex;
+      flex-shrink: 0;
+      justify-content: center;
+      margin-top: 15px;
+      padding: 0 36px;
+      padding-top: 15px;
+      width: 100%;
+      p {
+        color: #62646a;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 21px;
+      }
+      button {
+        background: none;
+        border: none;
+        color: #1dbf73;
+        cursor: pointer;
+        padding-left: 4px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

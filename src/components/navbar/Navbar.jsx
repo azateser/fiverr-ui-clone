@@ -5,11 +5,14 @@ import "./Navbar.scss";
 import CategoryMenu from "./components/CategoryMenu";
 import Search from "./components/Search";
 import { AnimatePresence, motion } from "framer-motion";
+import Modal from "../Modal/Modal";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [focusInput, setFocusInput] = useState(false);
+
+  const [activeModal, setAcitveModal] = useState("none");
 
   const [open, setOpen] = useState(false);
 
@@ -32,7 +35,7 @@ const Navbar = () => {
 
   // const currentUser = {
   //   id: 1,
-  //   username: "Zeynep ULUÇAY",
+  //   username: "Azat ESER",
   //   isSeller: true,
   // };
 
@@ -45,6 +48,9 @@ const Navbar = () => {
         active: activeStateConditional,
       })}
     >
+      {activeModal === "register" && <Modal activeModal={activeModal} setAcitveModal={setAcitveModal} type="register" />}
+      {activeModal === "login" && <Modal activeModal={activeModal} setAcitveModal={setAcitveModal} type="login" />}
+
       <AnimatePresence>{showMenu && focusInput && pathname === "/" && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.6 }} exit={{ opacity: 0 }} transition={{ duration: 0.1 }} className="focusBackground"></motion.div>}</AnimatePresence>
       <header
         className={classNames({
@@ -90,12 +96,17 @@ const Navbar = () => {
             </span>
             <span className={classNames({ active: activeStateConditional })}>$ USD</span>
             {!currentUser?.isSeller && <span className={classNames({ active: activeStateConditional })}>Become a Seller</span>}
-            {!currentUser && <span className={classNames({ active: activeStateConditional })}>Sign in</span>}
+            {!currentUser && (
+              <span className={classNames({ active: activeStateConditional })} onClick={() => setAcitveModal("login")}>
+                Sign in
+              </span>
+            )}
             {!currentUser && (
               <button
                 className={classNames({
                   "active-button": activeStateConditional,
                 })}
+                onClick={() => setAcitveModal("register")}
               >
                 Join
               </button>
