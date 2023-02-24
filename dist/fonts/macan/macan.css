@@ -1,0 +1,23 @@
+@font-face {
+  font-family: Macan;
+  font-weight: 700;
+  src: url("./macan-bold.woff2");
+}
+
+@font-face {
+  font-family: Macan;
+  font-weight: 600;
+  src: url("./macan-semibold.woff2");
+}
+
+@font-face {
+  font-family: Macan;
+  font-weight: 200;
+  src: url("./macan-light.woff2");
+}
+
+@font-face {
+  font-family: Macan;
+  font-weight: 400;
+  src: url("./macan-regular.woff2");
+}
