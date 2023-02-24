@@ -25,11 +25,11 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path: "/",
+          path: "/fiverr-ui-clone/dist/",
           element: <Home />,
         },
         {
-          path: "/gigs",
+          path: "fiverr-ui-clone/dist/gigs",
           element: <Gigs />,
         },
       ],
