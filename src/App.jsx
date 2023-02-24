@@ -29,7 +29,7 @@ function App() {
           element: <Home />,
         },
         {
-          path: "fiverr-ui-clone/dist/gigs",
+          path: "/fiverr-ui-clone/dist/gigs",
           element: <Gigs />,
         },
       ],
