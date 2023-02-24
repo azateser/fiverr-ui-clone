@@ -13,15 +13,15 @@ function App() {
   console.log(path);
   return (
     <div className="App">
-      {path === "/" && <Navbar />}
-      {path === "/gigs" && <Navbar />}
+      {path === "/fiverr-ui-clone/dist/" && <Navbar />}
+      {path === "/fiverr-ui-clone/dist/gigs" && <Navbar />}
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/gigs" element={<Gigs />} />
+        <Route exact path="/fiverr-ui-clone/dist/" element={<Home />} />
+        <Route exact path="/fiverr-ui-clone/dist/gigs" element={<Gigs />} />
         <Route exact path="*" element={<NotFound />} />
       </Routes>
-      {path === "/" && <Footer />}
-      {path === "/gigs" && <Footer />}
+      {path === "/fiverr-ui-clone/dist/" && <Footer />}
+      {path === "/fiverr-ui-clone/dist/gigs" && <Footer />}
     </div>
   );
 }
